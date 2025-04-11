@@ -1,0 +1,85 @@
+/* Genral Stles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f7;
+    color: #2d3436;
+}
+
+h2 {
+    color: #2d3436;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.card-title {
+    color: #2d3436;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.card-text {
+    color: #636e72;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0984e3;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Header Styles */
+.header {
+    background-color: #0984e3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* buttons and links */
+.btn-accent {
+    background-color: #d63031;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.btn-accent:hover {
+    background-color: #c0392b;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* media queries */
+@media (max-width: 768px) {
+    .card {
+        font-size: 1.2rem;
+    }
+    .btn-accent {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .card-text {
+        font-size: 0.8rem;
+    }
+}
