@@ -1,56 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gadgets</title>
-    <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnovateHub - Gadget Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    /* ======= Custom Styles ======= */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s;
+      background-color: #fff;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .product-img {
+      max-height: 200px;
+      object-fit: contain;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 30px 0;
+    }
+  </style>
 </head>
 <body>
-   <!-- Header Section -->
-<header class="bg-primary text-white">
+
+  <!-- ======= Header Section ======= -->
+  <header class="bg-primary text-white">
     <nav class="navbar navbar-expand-lg navbar-dark container py-3">
+
+      <!-- Logo and Store Name -->
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="ChatGPT Image Apr 10, 2025, 04_37_23 PM.png" alt="InnovateHub Logo" style="height: 40px; margin-right: 10px;">
         <span>InnovateHub</span>
       </a>
-      <!-- Hamburger toggle button -->
+
+      <!-- Hamburger Toggle for Mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <!-- Navigation Links -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#products">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#contact">Contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#video">Video</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
         </ul>
       </div>
+
     </nav>
   </header>
-  
-     <!-- Hero Section -->
-      <section class="hero bg-light py-5">
-        <div class="container text-center">
-            <h1 class="display-4">Welcome to InnovateHub</h1>
-            <p class="lead">Your one-stop shop for the latest gadgets and accessories.</p>
-            <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
-        </div>
-    </section>
+  <!-- ======= End Header ======= -->
 
-   <!-- Video Section -->
-<section id="video" class="bg-light py-5">
+
+  <!-- ======= Product Section ======= -->
+  <section id="products" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Featured Gadgets</h2>
+      <div class="row g-4">
+
+        <!-- Product Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="product-card text-center">
+            <img src="NEW IPHONE.jpeg" class="img-fluid product-img mb-3" alt="Smartphone">
+            <h5>Smartphone Pro</h5>
+            <p>Latest Model With Cutiing Edge Features.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="product-card text-center">
+            <img src="WIRELESS.webp" class="img-fluid product-img mb-3" alt="Wireless Earbuds">
+            <h5>Wireless Earbuds</h5>
+            <p>Experience high-quality sound without the wires.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="product-card text-center">
+            <img src="BLUETOOTH.jpeg" class="img-fluid product-img mb-3" alt="Bluetooth Speaker">
+            <h5>Bluetooth Speaker</h5>
+            <p>Portable and powerful sound wherever you go.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="product-card text-center">
+            <img src="NEW LAPTOP.webp" class="img-fluid product-img mb-3" alt="laptop">
+            <h5>laptop</h5>
+            <p>High-performance laptop for all your needs.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ======= End Product Section ======= -->
+
+
+  <!-- ======= Video Section ======= -->
+  <section id="video" class="bg-light py-5">
     <div class="container text-center">
       <h2 class="mb-4">Watch Our Product in Action</h2>
       <div class="ratio ratio-16x9 mx-auto" style="max-width: 900px;">
@@ -62,73 +133,19 @@
       </div>
     </div>
   </section>
-  
-   
-            <!-- Product Section -->
-    <section id="products" class="container my-5">
-        <h2 class="text-center mb-4">Our Product</h2>
-        <div class="row">
-            <!-- Product Item 1 -->
-             <div class="col-md-3 col-md-6 mb-4">
-            <div class="card">
-            <img src="iphone image.jpg" class="card-img-top" alt="Product 1">
-            <div class="card-body">
-                <h5 class="card-title">Smartphone</h5>
-                <p class="card-text">Latest model with cutting-edge features</p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
-            </div>
-           </div>
-        </div>
-        <!-- Product Item 2 -->
-         <div class="col-md-3 col-md-6 mb-4">
-         <div class="card">
-            <img src="laptop 2.jpg" class="card-img-top" alt="Product 2">
-            <div class="card-body">
-                <h5 class="card-title">Smartwatch</h5>
-                <p class="card-text">Track your health and stay connected with style</p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
-            </div>
-           </div>
-          </div>
+  <!-- ======= End Video Section ======= -->
 
-        <!-- Product Item 3 -->
-            <div class="col-md-3 col-md-6 mb-4">
-            <div class="card">
-                <img src="many laptops.jpg" class="card-img-top" class="card-img-top" alt="Product 3">
-                <div class="card-body">
-                    <h5 class="card-title">Wireless Headphones</h5>
-                    <p class="card-text">Experience high-quality sound without the wires</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-            </div>
-            </div>
 
-            <!-- Product Item 4 -->
-            <div class="col-md-3 col-md-6 mb-4">
-            <div class="card">
-                <img src="laptop 2.jpg" class="card-img-top" alt="Product 4">
-                <div class="card-body">
-                    <h5 class="card-title">Laptops</h5>
-                    <p class="card-text"> still thinking</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-            </div>
-        </div>
+  <!-- ======= Footer Section ======= -->
+  <footer id="contact">
+    <div class="container text-center">
+      <p>&copy; 2025 InnovateHub. All rights reserved.</p>
     </div>
-    </section>
+  </footer>
+  <!-- ======= End Footer Section ======= -->
 
-    <!-- Footer Section -->
-    <footer class="bg-secondary text-white text-center py-3">
-        <div class="container text-center">
-            <p>&copy; 2025 Gadget Store. All rights reserved.</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
-                <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
-            </ul>
-        </div>
 
-        <!-- Bootstrap JS and dependecies-->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html
+</html>
